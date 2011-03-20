@@ -1,7 +1,7 @@
 class Player
   def initialize(game_window)
     @game_window = game_window
-    @icon = Gosu::Image.new(@game_window, "images/player1_icon.png", true)
+    @icon = Gosu::Image.new(@game_window, "media/player1_icon.png", true)
     @x = 150
     @y = 350
   end

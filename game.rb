@@ -7,7 +7,9 @@ class Game < Gosu::Window
   def initialize
     super(600, 500, false)
     @player1 = Player.new(self)
-    @balls = 3.times.map {Ball.new(self)}
+    @balls = 4.times.map {Ball.new(self)}
+    @song = Gosu::Song.new(self, 'media/varsenal_02.mp3')
+    @song.volume = 0.5
     @running = true
   end
   
@@ -46,6 +48,7 @@ class Game < Gosu::Window
   def draw
     @player1.draw
     @balls.each {|ball| ball.draw}
+    @song.play unless @song.playing?
   end
   
   def stop_game!
