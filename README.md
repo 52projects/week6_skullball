@@ -19,7 +19,6 @@ Tech
 Libs
 -------------------------
 
-* [OAuth2 0.1.0](http://rubygems.org/gems/oauth2)
 * [gosu 0.7](hhttp://rubygems.org/gems/gosu)
 
 Possible output
